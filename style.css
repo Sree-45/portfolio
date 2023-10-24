@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #0e1111;
+}
+
+header {
+  z-index: 10;
+  padding-top: 5px;
+  height: 10vh;
+  background-color: rgba(14, 17, 17, 0.4); 
+  backdrop-filter: blur(5px); 
+  width: 100vw;
+  position: fixed;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 99;
+}
+
+header nav img {
+  height: 4rem;
+  width: 4rem;
+  object-fit: contain;
+  margin-left: 10%;
+}
+
+header nav ul {
+  display: flex;
+  margin-right: 10%;
+}
+
+header nav ul li {
+  list-style: none;
+  justify-content: center;
+  margin: 0px 20px;
+}
+
+header nav ul li a {
+  color: #98999a;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+
+header nav ul li a:hover {
+  color: #fbfbfb;
+}
+
+header nav ul li .active {
+  color: #fbfbfb;
+}
+
+.landing {
+  display: flex;
+  height: 100vh;
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landing .intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing .intro h3 {
+  color: #fbfbfb;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-left: 10vw;
+}
+
+.landing .intro h3 span {
+  font-family: 'Russo One', sans-serif;
+  letter-spacing: 4px;
+  color:#4163FF; 
+  font-weight: 600;
+  font-size: 5rem;
+}
+
+.intro button:hover {
+  background-color: #4163FF;
+  color: white;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 50vh;
+  padding-right: 10%;
+}
+
+.socials .line {
+  background-color: #4163FF;
+  height: 15vh;
+  width: 2.5px;
+}
+
+.socials i {
+  color: #fbfbfb;
+  font-size: 2.4rem;
+}
+.socials a {
+  text-decoration: none; 
+}
+
+.skills {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+.skills h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #4163FF;
+  font-family: 'Mulish', sans-serif;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2.61%;
+  gap: 2.5vh;
+}
+
+.skill-card {
+  height: 20vw;
+  width: 20vw;
+  background-color: rgba(35, 43, 43, 0.4); 
+  backdrop-filter: blur(5px); 
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+.skill-card:hover {
+  background-color: #4163FF;
+}
+
+
+.skill-card img {
+  height: 7.5vw;
+  width: 7.5vw;
+  object-fit: contain;
+}
+
+.skill-card h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fbfbfb;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.education h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #4163FF;
+  font-family: 'Mulish', sans-serif;
+  padding:20px;
+}
+
+.edu {
+  width: 50vw;
+  position: relative;
+  margin-left: 20vh;
+  padding-bottom: 50px;
+}
+
+.edu h2 {
+  color: #C2D9FF;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.edu h2::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  color: #4163FF;
+  background-color: #4163FF;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 7.5%;
+  left: -5%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 20px 5px #4163FF;
+}
+
+.edu-desc::before {
+  content: "";
+  height: 150px;
+  width: 2.5px;
+  background-color: #fbfbfb;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: -5%;
+}
+
+.edu-desc h3 {
+  padding-bottom: 10px;
+  color: #C2D9FF;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.edu-desc p {
+  color: #fbfbfb;
+  font-size: 16;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+} 
+
+.contact-me {
+  width: 100vw;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-me h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #4163FF;
+  font-family: 'Mulish', sans-serif;
+  padding:20px;
+}
+
+.contact {
+  display: flex;
+  gap: 24px;
+}
+
+.contact-card {
+  background-color: #4163FF;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  margin-top: 7.5vh;
+}
+
+
+
