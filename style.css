@@ -415,7 +415,7 @@ header nav ul li .active {
   object-fit: contain;
 }
 .skill-card h2 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 400;
   color: #fbfbfb;
 }
@@ -424,6 +424,12 @@ header nav ul li .active {
   font-size: 2rem;
 }
 .education h1 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
+}
+@media screen and (max-width: 475px) {
+  .intro h3 span:nth-child(2)::after {
+      content: '\000A'; 
+      white-space: pre; 
+  }
 }
