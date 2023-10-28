@@ -136,7 +136,8 @@ header nav ul li .active {
   font-size: 3.5rem;
   font-weight: 700;
   color: #4163FF;
-   font-family: 'Russo One', sans-serif;
+  letter-spacing: 2px;
+  font-family: 'Russo One', sans-serif;
 }
 
 .cards {
