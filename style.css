@@ -176,9 +176,6 @@ header nav ul li .active {
   transition: all ease 0.5s;
 }
 
-.skill-card:hover {
-  background-color: #4163FF;
-}
 
 
 .skill-card img {
@@ -385,13 +382,41 @@ header nav ul li .active {
   }
 }
 
-.SUBHERO {
-  display: flex;
-  justify-content: space-around;
-  width: 100vw;
-}
+
 @media (max-width: 768px) {
   header ul li {
     display: none;
   }
+  .landing .intro h3 {
+    font-size: 1rem;
+  }
+  .landing .intro h3 span {
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 4px;
+    color:#4163FF; 
+    font-weight: 600;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+  }
+  .contact-card {
+    margin-top: 2px;
+    justify-content: center;
+  }
+  
+.skill-card img {
+  height: 5vw;
+  width: 5vw;
+  object-fit: contain;
+}
+.skill-card h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fbfbfb;
+}
 }
