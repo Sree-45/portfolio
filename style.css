@@ -419,4 +419,11 @@ header nav ul li .active {
   font-weight: 400;
   color: #fbfbfb;
 }
+.socials i {
+  color: #fbfbfb;
+  font-size: 2rem;
+}
+.education h1 {
+  font-size: 1rem;
+}
 }
