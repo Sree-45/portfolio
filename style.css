@@ -8,6 +8,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x:hidden;
+  width: 100vw;
 }
 
   
@@ -69,6 +70,12 @@ header nav ul li .active {
   color: #fbfbfb;
 }
 
+.full {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .landing {
   display: flex;
   height: 100vh;
@@ -109,7 +116,7 @@ header nav ul li .active {
   gap: 10px;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 50vh;
+  margin-top: 40vh;
   padding-right: 10%;
 }
 
@@ -261,7 +268,7 @@ header nav ul li .active {
 
 .contact-me {
   width: 100vw;
-  padding: 100px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -279,7 +286,7 @@ header nav ul li .active {
 
 .contact {
   display: flex;
-  gap: 24px;
+  gap: 5px;
 }
 
 .contact-card {
@@ -288,7 +295,7 @@ header nav ul li .active {
   padding: 10px;
   border-radius: 8px;
   display: flex;
-  gap: 10px;
+  gap: 5px;
   margin-top: 7.5vh;
 }
 .contact-card p {
@@ -375,5 +382,16 @@ header nav ul li .active {
   }
   to {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.SUBHERO {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+@media (max-width: 768px) {
+  header ul li {
+    display: none;
   }
 }
