@@ -172,10 +172,12 @@ header nav ul li .active {
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  gap: 2.5vh;
+  gap: 1.5vh;
   transition: all ease 0.5s;
 }
-
+.skill-card:hover {
+  background-color: #4163FF;
+}
 
 
 .skill-card img {
@@ -410,6 +412,7 @@ header nav ul li .active {
   }
   
 .skill-card img {
+  padding: 2px;
   height: 5vw;
   width: 5vw;
   object-fit: contain;
